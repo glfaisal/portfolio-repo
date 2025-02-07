@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: "Poppins", serif;
+    font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -20,7 +20,7 @@ body {
 
 header {
     background: var(--dark-color);
-    height: 800px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
 }
 
 .container {
@@ -49,24 +49,41 @@ header nav .branding {
     margin-right: 3rem;
 }
 
-.btn {
-    padding: 0.8rem 3rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border: 2 solid transparent;
-    outline: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: all .3s ease;
+.hero {
+    padding: 3rem 0;
 }
 
-.btn-primary {
-    background: var(--primary-color);
-    color: var(--dark-color);
+.hero img {
+    width: 400px;
 }
 
-btn-primary:hover {
-    background: transparent;
-    border-color: var(--primary-color);
+.hero .right {
+    color: var(--pure-color);
+}
+
+.hero .right h6 {
+    font-size: 1.6rem;
     color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.hero .right h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span {
+    color: var(--primary-color);
+}
+
+.hero .right p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.hero .right {
+    margin-top: -7rem;
 }
