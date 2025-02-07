@@ -1,0 +1,72 @@
+@import 'utilities.css';
+:root{
+    --primary-color: #3DCFD3;
+    --dark-color: #161616;
+    --pure-color: #FFFFFF;
+    --text-color: #898989;
+    --light-color: #F2F2F2;
+}
+
+body {
+    font-family: "Poppins", serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialised;
+}
+
+header {
+    background: var(--dark-color);
+    height: 800px;
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+header nav .left a {
+    color: var(--pure-color);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+header nav .left a:hover {
+    color: var(--primary-color);
+} 
+
+header nav {
+    padding: 2rem 0;
+}
+
+header nav .branding {
+    margin-right: 3rem;
+}
+
+.btn {
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2 solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--dark-color);
+}
+
+btn-primary:hover {
+    background: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
