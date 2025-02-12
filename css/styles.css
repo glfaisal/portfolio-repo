@@ -9,6 +9,7 @@
 }
 
 body {
+    height: 8000px;
     font-family: "Poppins", serif;
 }
 
@@ -393,4 +394,28 @@ section.blog .card-wrapper .card .card-content p {
 
 section.blog .card-wrapper .card .card-content a.read-more {
     font-size: 0.8rem;
+}
+
+section.contact .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+
+section.contact .card-wrapper .card {
+    text-align: center;
+}
+
+section.contact .card-wrapper .card img {
+    margin-bottom: 3rem;
+}
+
+section.contact .card-wrapper .card h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.contact .card-wrapper .card h6 {
+    font-size: 1rem;
+    color: var(--text-color);
 }
